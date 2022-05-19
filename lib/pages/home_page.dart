@@ -6,7 +6,7 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     var days = 30;
-    var bootcamp = "Flutter Mania";
+    var bootcamp = "flutter";
 
     return Scaffold(
         appBar: AppBar(
@@ -14,7 +14,7 @@ class HomePage extends StatelessWidget {
         ),
         drawer: const Drawer(),
         body: Center(
-          child: Text('Welcome to $days days flutter of $bootcamp'),
+          child: Text('Welcome to $days days of $bootcamp'),
         ),
     );
   }
