@@ -1,3 +1,4 @@
+import 'package:e_commerce_app/home_page.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -10,15 +11,8 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      home: Scaffold(
-        appBar: AppBar(
-          title: const Text('Catalog App'),
-        ),
-        body: const Center(
-          child: Text('Welcome to flutter'),
-        ),
-      ),
+    return const MaterialApp(
+      home: HomePage(),
     );
   }
 }
