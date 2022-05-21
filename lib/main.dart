@@ -8,27 +8,25 @@ void main() {
   runApp(const MyApp());
 }
 
-
 class MyApp extends StatelessWidget {
   const MyApp({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       themeMode: ThemeMode.light,
       theme: ThemeData(
         primarySwatch: Colors.deepPurple,
         fontFamily: GoogleFonts.lato().fontFamily,
       ),
       darkTheme: ThemeData(brightness: Brightness.light),
-
-      initialRoute: "/login",
+      initialRoute: "/home",
       routes: {
-        "/": (context)=> const LoginPage(),
+        "/": (context) => const LoginPage(),
         MyRoutes.homeRoute: (context) => const HomePage(),
-        MyRoutes.loginRoute:(context)=> const LoginPage(),
+        MyRoutes.loginRoute: (context) => const LoginPage(),
       },
     );
   }
-
 }
